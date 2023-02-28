@@ -1,0 +1,10 @@
+bill=input("What was the total bill? $")
+tip=input("What percentage tip would you like to give? 10, 12, or 15? ")
+no_of_people=input("how man people to split the bill?")
+bill=float(bill)
+tip=float(tip)
+no_of_people=int(no_of_people)
+tipped_bill=bill*(1+(tip/100))
+actual_bill=(tipped_bill)/no_of_people
+bill_to_be_paid=(round(actual_bill,2))
+print(f"${bill_to_be_paid}")
